@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nivedh Portfolio</title>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "1eBnOGn0pHiZ_6oSE",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+          Nivedh <span>Manoj</span>
+        </div>
+        <div class="links">
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <a href="#about">About</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
+            <a href="#skills">Skills</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <a href="#projects">Certificate</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="400"
+          >
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+      </div>
+      <div class="dropdown">
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+
+    <section id="about">
+      <div class="main-container">
+        <!-- <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+          <img src="profile photo\vichu PP.jpg" alt="Nivedh Profile photo" />
+        </div>-->
+        <div class="content">
+          <h1
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-delay="700"
+          >
+            Hey I'm <span>Nivedh</span>
+          </h1>
+          <div
+            class="typewriter"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="900"
+          >
+            I'm a <span class="typewriter-text"></span><label for="">|</label>
+          </div>
+          <p
+            data-aos="flip-down"
+            data-aos-duration="1500"
+            data-aos-delay="1100"
+          >
+            I am a passionate developer with a keen interest in creating
+            user-friendly applications. My skills include web development,
+            design, and mobile app development.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://github.com/nivedhbot"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1300"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/yourprofile"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1400"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="www.linkedin.com/in/nivedh-manoj"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1500"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://twitter.com/yourprofile"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1600"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+          <div
+            class="btn"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="1800"
+          >
+            <button>
+              <a href="#contact" style="color: inherit; text-decoration: none"
+                >Contact Me</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skill-container">
+        <div class="skill-card">
+          <img src="skill photo\html-5.png" alt="HTML 5" />
+          <h3>HTML 5</h3>
+          <p>
+            Expert in building semantic and accessible web pages using HTML5
+            standards.
+          </p>
+        </div>
+        <div class="skill-card">
+          <img src="skill photo\css-3.png" alt="CSS 3" />
+          <h3>CSS 3</h3>
+          <p>
+            Experienced in creating responsive layouts and modern designs with
+            CSS.
+          </p>
+        </div>
+        <div class="skill-card">
+          <img src="skill photo\js.png" alt="JavaScript" />
+          <h3>JavaScript</h3>
+          <p>
+            Proficient in writing clean, efficient code and building dynamic web
+            apps.
+          </p>
+        </div>
+        <div class="skill-card">
+          <img src="skill photo\python.png" alt="Python" />
+          <h3>Python</h3>
+          <p>
+            Skilled in writing efficient, scalable scripts and back-end
+            development.
+          </p>
+        </div>
+        <div class="skill-card">
+          <img src="skill photo\mongodb-original-wordmark.png" alt="MongoDB" />
+          <h3>MongoDB</h3>
+          <p>
+            Experienced in managing NoSQL databases, handling large datasets,
+            and implementing efficient data models using MongoDB.
+          </p>
+        </div>
+        <div class="skill-card">
+          <img src="skill photo\C.png" alt="C" />
+          <h3>C</h3>
+          <p>
+            Skilled in writing efficient C programs, understanding low-level
+            memory management, and optimizing system-level applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">My Certificate</h2>
+      <div class="projects-grid">
+        <div class="project" data-aos="fade-up">
+          <h3>Mobile Application Development</h3>
+          <p class="description">
+            Certificate based on the development of a tours and tourism booking
+            app. This project involved creating an intuitive interface,
+            integrating APIs for booking, and ensuring a seamless user
+            experience.
+          </p>
+          <img
+            src="Certificate\Tech expo.jpg"
+            alt="Certificate of Mobile Application Development"
+          />
+        </div>
+        <div class="project" data-aos="fade-up">
+          <h3>Introduction to Programming in C</h3>
+          <p class="description">
+            This course offered an introduction to the C programming language,
+            covering key concepts like data types, control structures, and
+            functions, equipping me with the foundational skills to write
+            effective C programs.
+          </p>
+          <img
+            src="Certificate\Introduction to programming in C.jpg"
+            alt="C Programming Certificate"
+          />
+        </div>
+        <div class="project" data-aos="fade-up">
+          <h3>Microsoft Advanced Excel</h3>
+          <p class="description">
+            This course focused on advanced features of Microsoft Excel,
+            including complex formulas, pivot tables, data analysis tools, and
+            automation techniques using macros, enhancing my ability to manage
+            and analyze data efficiently.
+          </p>
+          <img
+            src="Certificate\Advanced excel Certificate.jpg"
+            alt="Advanced Excel Certificate"
+          />
+        </div>
+        <div class="project" data-aos="fade-up">
+          <h3>C and C++ Programming</h3>
+          <p class="description">
+            This course provided in-depth knowledge of C and C++ programming
+            languages, covering core concepts like memory management,
+            object-oriented programming, and algorithm design, enhancing my
+            proficiency in building efficient and scalable software.
+          </p>
+          <img
+            src="Certificate\C and c++ certficate.jpg"
+            alt="C and C++ Certificate"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+
+        <form class="contact-form">
+          <input type="text" id="fullName" placeholder="Your Name" required />
+          <input type="email" id="email_id" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="button" onclick="SendMail()">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
